@@ -1,1 +1,10 @@
-@import "./menu.css";
+@import "./styles/menu.css";
+@import "./styles/footer.css";
+@import "./styles/partenaire.css";
+
+:root{
+--color-primary : #96E072;
+--color-secondary : #DDAE7E;
+--color-black : #000000;
+--color-white : #ffffff;
+}

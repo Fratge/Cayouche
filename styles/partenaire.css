@@ -1,0 +1,17 @@
+.partenaire{
+    display: flex;
+}
+
+h2{
+    height: 10px;
+    text-align: center;
+}
+
+.img-partenaire{
+    height: 10vh;
+}
+
+img{
+    height: 52px; 
+    width: 100px;
+ }
