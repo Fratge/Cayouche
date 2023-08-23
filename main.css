@@ -7,11 +7,18 @@
 /* ARTISTE */
 @import "./styles/artiste.css";
 
+/* CARROUSEL */
+@import "./styles/carrousel.css";
 
+/* CONTACT */
+@import "./styles/contact.css";
 
-
-@import "./styles/footer.css";
+/* PARTENAIRE */
 @import "./styles/partenaire.css";
+
+/* FOOTER */
+@import "./styles/footer.css";
+
 
 :root{
 --color-primary : #96E072;

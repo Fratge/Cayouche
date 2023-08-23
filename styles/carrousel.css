@@ -1,0 +1,49 @@
+.carrousel {
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.container {
+position: relative;
+width: 100%; /* ajustez la largeur selon vos besoins */
+height: 100%; /* ajustez la hauteur selon vos besoins */
+overflow: hidden;
+}
+
+.slider {
+display: flex;
+transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+flex: 0 0 100%;
+}
+
+.slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.bi {
+position: absolute;
+margin-top: 10px;
+font-size: 5vh;
+color: var(--color-primary);
+}
+
+.bi:hover{
+    color: var(--color-secondary);
+}
+
+.bi-caret-left-square{
+    left: 31%;
+}
+
+.bi-caret-right-square{
+    right: 31%;
+}

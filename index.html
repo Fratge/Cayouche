@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
     <title>Cayouche | Accueil</title>
 </head>
 <body>
@@ -39,8 +39,27 @@
     </section>
 
     <section class="wrapper">
+        <div class="carrousel">
+            <div class="container">
+                <div class="slider">
+                  <div class="slide"><img src="./img_cayouche/Cayouche-1.jpg" alt="Image 1"></div>
+                  <div class="slide"><img src="./img_cayouche/CAYOUCHE-2.jpg" alt="Image 2"></div>
+                  <div class="slide"><img src="./img_cayouche/cayouche-4.jpg" alt="Image 3"></div>
+                </div>
+                
+            </div>
+            <i class="bi bi-caret-right-square" id="nextBtn"></i>
+            <i class="bi bi-caret-left-square" id="prevBtn"></i>
+        </div>
+    </section>
+
+    <section class="wrapper">
         <h2> Contact</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.9184339203853!2d-67.50000992310915!3d48.840694501951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c96c13fffb20c2b%3A0xa2ab048394234f5a!2sC%C3%A9gep%20de%20Matane!5e0!3m2!1sfr!2sca!4v1692801789928!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="text-contact">
+            <P>616 Avenue St Rédempteur, Matane, QC G4W 1L1, Canada</P>
+            <p>Parking sur place</p>
+        </div>
     </section>
 
     <section class="wrapper">
@@ -67,12 +86,13 @@
 
     <footer class="wrapper">
         <div class="footer-img">
-            <i class="bi bi-instagram"></i>
-            <img src="logo test.png">
-            <i class="bi bi-facebook"></i>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <img src="./img/logo.png" class="logo-footer">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
         </div>
         <p class="footer-text">Copyright 2023 : Site réalisé par Sébastien GROSS et Benjamin HUNCKLER</p>
     </footer>
 
+    <script src="carrousel.js"></script>
 </body>
 </html>

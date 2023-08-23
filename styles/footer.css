@@ -1,6 +1,6 @@
 .footer-img{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .footer-text{
@@ -9,14 +9,22 @@
     font-family: "Monserrat",sans-serif;
 }
 
-.bi{
+a{
     color: var(--color-primary);
     font-size: 35px;
     display: flex;
-    align-items: center;
+    align-items:center;
+    text-decoration: none;
 }
 
-img{
+.bi-facebook{
+    margin-left: -5.2vh;
+}
+
+a:hover{
+    color: var(--color-secondary);
+}
+
+.logo-footer{
     width: 150px;
-    margin: 0 5vw 2vh 5vw;
 }
