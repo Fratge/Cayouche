@@ -1,0 +1,11 @@
+header{
+    background-color: red;
+}
+
+.header-nav {
+    /* background-color: blue; */
+}
+
+.header-nav > ul > li {
+    list-style-type: none;
+}
