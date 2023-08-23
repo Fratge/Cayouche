@@ -61,11 +61,12 @@ img[alt="Portrait Cayouche"]{
     margin-top: 75px;
 }
 
-.apercu-title {
+.apercu-title, .dates-title {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: 19px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .apercu-title::before {
@@ -78,4 +79,11 @@ img[alt="Portrait Cayouche"]{
     height: 5px;
     border-radius: 50px;
     background-color: #96E072;
+}
+
+.citation{
+    text-align: center;
+    color: rgb(168, 168, 168);
+    font-style: italic;
+    margin-top: 10px;
 }

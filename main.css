@@ -7,18 +7,13 @@
 /* ARTISTE */
 @import "./styles/artiste.css";
 
+/* DATES */
+@import "./styles/dates.css";
 
 
 
-@import "./styles/footer.css";
-@import "./styles/partenaire.css";
 
-:root{
---color-primary : #96E072;
---color-secondary : #DDAE7E;
---color-black : #000000;
---color-white : #ffffff;
-}
+
 
 
 

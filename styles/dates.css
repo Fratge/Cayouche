@@ -1,0 +1,53 @@
+.dates{
+    margin-top: 35px;
+}
+
+.dates-title::before {
+    content: "";
+    position: absolute;
+    left: 62%; 
+    bottom: -6px;
+    transform: translateX(-40%);
+    width: 180px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #96E072;
+}
+
+.samedi, .dimanche{
+    display: flex;
+}
+
+.jours1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: #BCE8A6;
+    width: 75px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.jours2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: #DDAE7E;    
+    width: 75px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.jours-infos1{
+    background-color: #DCF2D1;
+    padding: 10px 0;
+    width: 15;
+}
+
+.jours-infos2{
+    background-color: #E7CAAE;
+}
+
+
