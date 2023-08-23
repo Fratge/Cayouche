@@ -1,17 +1,15 @@
-.partenaire{
-    display: flex;
-}
-
 h2{
-    height: 10px;
     text-align: center;
 }
 
 .img-partenaire{
-    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
 }
 
-img{
-    height: 52px; 
+.img-partenaire img{
+    margin-left: 0;
     width: 100px;
- }
+    margin-right: 1vw;
+}

@@ -6,6 +6,7 @@
 .footer-text{
     display: flex;
     justify-content: center;
+    font-family: "Monserrat",sans-serif;
 }
 
 .bi{
@@ -17,5 +18,5 @@
 
 img{
     width: 150px;
-    margin: 0 10vw 0 10vw;
+    margin: 0 5vw 2vh 5vw;
 }

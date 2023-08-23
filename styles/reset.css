@@ -12,3 +12,15 @@ p{
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
 }
+
+h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+h2{
+    font-family: "Poppins",sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
