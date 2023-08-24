@@ -72,15 +72,15 @@ input[type=checkbox]:focus {
     background-color: white;
 }
 
-.toggle:checked {
-    border-color: var(--toggleDarkModeBorderColor);
-}
 
 .toggleDugmePomijeriDesno {
     transform: translatex(35px);
 }
 
-h1, h2, p{
+h1, h2{
     color: var(--textColor)
-  }
+}
 
+.text-description, .text-contact, .footer-text{
+    color: var(--textColor);
+}

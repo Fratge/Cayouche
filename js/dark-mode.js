@@ -1,9 +1,3 @@
-
-/** 
-/ ** DARK MODE function that allows you to change the root state from light mode to dark mode using CSS variables that are added
- * in the body itself by clicking on the button
- */
-
 let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('.dark-mode-toggle');
 
@@ -19,10 +13,6 @@ const disableDarkMode = () => {
   localStorage.setItem('darkMode', null);
 }
 
-if (darkMode === 'enabled') {
-  enableDarkMode();
-}
-
 darkModeToggle.addEventListener('click', () => {
   darkMode = localStorage.getItem('darkMode');
 
@@ -33,7 +23,7 @@ darkModeToggle.addEventListener('click', () => {
   }
 });
 
-//  Change the position of the toggle button in relation to whether dark mode is active in the body or not
+
 const toggleDugmeId = document.getElementById("toggleDugmeId")
 
 const enableDarkModeDugme = () => {
