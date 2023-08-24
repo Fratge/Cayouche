@@ -7,6 +7,12 @@
 /* ARTISTE */
 @import "./styles/artiste.css";
 
+/* DATES */
+@import "./styles/dates.css";
+
+/* BILLETERIE */
+@import "./styles/billeterie.css";
+
 /* CARROUSEL */
 @import "./styles/carrousel.css";
 

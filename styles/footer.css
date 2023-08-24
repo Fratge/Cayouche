@@ -9,7 +9,7 @@
     font-family: "Monserrat",sans-serif;
 }
 
-a{
+.footer-img > a{
     color: var(--color-primary);
     font-size: 35px;
     display: flex;
@@ -21,7 +21,7 @@ a{
     margin-left: -5.2vh;
 }
 
-a:hover{
+.footer-img > a:hover{
     color: var(--color-secondary);
 }
 
