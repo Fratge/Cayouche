@@ -46,10 +46,18 @@
     width: 100%;
 }
 
+.jours-infos1 :first-child{
+    font-weight: bold;
+    text-align: center;
+}
+
 .jours-infos2{
     background-color: #E7CAAE;
     padding: 10px 5px;
     width: 100%;
 }
 
-
+.jours-infos2 :first-child{
+    font-weight: bold;
+    text-align: center;
+}
