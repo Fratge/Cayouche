@@ -28,3 +28,8 @@
 .logo-footer{
     width: 150px;
 }
+
+footer > p{
+    text-align: center;
+    margin-bottom: 30px;
+}

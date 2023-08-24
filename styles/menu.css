@@ -4,14 +4,7 @@
 
 .darkmode {
       --dark: #293145;
-  
-       /*Box Shadow NavBar*/
-      --navBarBoxShadow: 0 0 10px #bdbdbd;
-      --textColorH1: #ffffff;
-  
-      /*Toggle button dark mode styles*/
-      --toggleButtonPozadina: #fbfdf7;
-      --toggleDarkModeBorderColor:#979da9;
+      --textColor: #ffffff;
 }
 
 body {
@@ -30,9 +23,8 @@ body {
     align-items: center;
     border-radius: 100px;
     z-index: 50;
-    right: -12px;
-    transform: rotate(90deg);
-    top: 50px;
+    right: 0;
+    top: 94%;
 }
 
 .darkModeTekst {
@@ -75,9 +67,9 @@ input[type=checkbox]:focus {
     height: 19px;
     border-radius: 50%;
     border: 1px solid var(--toggleDugmeBorderColor);
-    background: var(--toggleButtonPozadina);
     box-shadow: 0 1px 2px rgb(44 44 44 / 20%);
     transform: translatex(20px);
+    background-color: white;
 }
 
 .toggle:checked {
@@ -89,6 +81,6 @@ input[type=checkbox]:focus {
 }
 
 h1, h2, p{
-    color: var(--textColorH1)
+    color: var(--textColor)
   }
 

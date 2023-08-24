@@ -5,11 +5,13 @@ h2{
 .img-partenaire{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around
+    justify-content:space-around;
+
 }
 
 .img-partenaire img{
     margin-left: 0;
     width: 100px;
     margin-right: 1vw;
+    margin-bottom: 30px;
 }
