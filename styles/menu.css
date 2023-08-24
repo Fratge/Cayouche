@@ -84,3 +84,7 @@ h1, h2{
 .text-description, .text-contact, .footer-text{
     color: var(--textColor);
 }
+
+.logo-footer{
+    background-image: url('img/Bas-Droit.png');
+}
