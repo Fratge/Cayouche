@@ -9,8 +9,8 @@ align-items: center;
 
 .container {
 position: relative;
-width: 100%; /* ajustez la largeur selon vos besoins */
-height: 100%; /* ajustez la hauteur selon vos besoins */
+width: 100%;
+height: 100%;
 overflow: hidden;
 }
 
@@ -46,4 +46,47 @@ color: var(--color-primary);
 
 .bi-caret-right-square{
     right: 10%;
+}
+
+@media screen and (min-width: 500px) {
+.carrousel-container{
+    display: none;
+}
+}
+
+@media  screen and (max-width: 500px) {
+    .photo-container{
+        display: none;
+    }
+}
+img {
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+.photo-image{
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-image > img{
+    width: 32.5%;
 }

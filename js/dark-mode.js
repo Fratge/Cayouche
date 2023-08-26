@@ -16,11 +16,11 @@ const disableDarkMode = () => {
 
 darkModeToggle.addEventListener('click', () => {
   darkMode = localStorage.getItem('darkMode');
-  logoFooter.src = './img/logo.png'; // Nouveau chemin d'image pour le mode sombre
+  logoFooter.src = './img/logo-white.png'; // Nouveau chemin d'image pour le mode sombre
 
   if (darkMode !== 'enabled') {
     enableDarkMode();
-    logoFooter.src = './img/download.png'; // Revenir à l'image d'origine pour le mode clair
+    logoFooter.src = './img/logo-dark.png'; // Revenir à l'image d'origine pour le mode clair
 
   } else {
     disableDarkMode();

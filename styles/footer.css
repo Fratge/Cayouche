@@ -1,6 +1,6 @@
 .footer-img{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .footer-text{
@@ -18,7 +18,11 @@
 }
 
 .bi-facebook{
-    margin-left: -5.2vh;
+    margin-left: 10vh;
+}
+
+.bi-instagram{
+    margin-left: -15vh;
 }
 
 .footer-img > a:hover{

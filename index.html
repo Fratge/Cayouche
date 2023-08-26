@@ -27,23 +27,26 @@
         </div>
     </header>
 
-    <section class="artiste wrapper">
-        <div class="description-container">
+    <section class="artiste">
+        <div class="description-container wrapper">
             <img src="./img/Haut_Gauche.png" alt="Haut_Gauche">
             <div>
                 <h1 class="artiste-nom">CAYOUCHE</h1>   
                 <img src="./img/Cayouche_Portrait.jpg" alt="Portrait Cayouche">
-                <p class="text-description">
+                <p>
                     Cayouche a un style musical unique qui mélange la musique country traditionnelle avec des paroles humoristiques, souvent en utilisant le langage coloré et 
                     l'argot acadien. 
                 </p>
             </div>
             <img src="./img/Bas_Droit.png" alt="Bas_Droit">
         </div>
-        <div class="apercu-container">
+        <img src="./img/vague.svg" alt="vague">
+        <div class="apercu-container wrapper">
             <h2 class="apercu-title">Aperçu de l'artiste</h2>
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/RqPjHVoSp1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p class="citation">“C’est pas l’homme qui prend la mère mais c’est la mère qui prend l’homme” </p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/RqPjHVoSp1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="youtube" allowfullscreen></iframe>
+                <p class="citation">“C’est pas l’homme qui prend la mère mais c’est la mère qui prend l’homme” </p>
+            </div>
         </div>
     </section>
 
@@ -55,22 +58,21 @@
                 <p>26 août</p>
             </div>
             <div class="jours-infos1">
-                <p> De 19h30 à 23h</p>
-                <p>- Morceaux de l'album «Un vieux hippy»,</p>
-                <p>- Morceaux de l'album «Roule, Roule»,</p>
+                <p>Lorem ipsum dolor,</p>
+                <p>Lorem ipsum dolor,</p>
+                <p>Lorem ipsum dolor,</p>
             </div>
         </div>
 
         <div class="dimanche">
             <div class="jours-infos2">
-                <p> De 18h30 à 22h</p>
-                <p>- Morceaux de l'album «Last Call»,</p>
-                <p>- Morceaux de l'album «Le Rappel»,</p>
-                <p>- Suprise spécial</p>
+                <p>Lorem ipsum dolor,</p>
+                <p>Lorem ipsum dolor,</p>
+                <p>Lorem ipsum dolor,</p>
             </div>
             <div class="jours2">
-                <p>Dimanche</p>
-                <p>27 août</p>
+                <p>Samedi</p>
+                <p>26 août</p>
             </div>
         </div>
     </section>
@@ -105,7 +107,7 @@
         </div>
     </section>
 
-    <section class="wrapper">
+    <section class="wrapper carrousel-container">
         <h2> Photos</h2>
         <div class="carrousel">
             <div class="container">
@@ -118,6 +120,19 @@
             </div>
             <i class="bi bi-caret-right-square" id="nextBtn"></i>
             <i class="bi bi-caret-left-square" id="prevBtn"></i>
+        </div>
+    </section>
+
+    <section class="wrapper photo-container">
+        <h2>Photos </h2>
+        <div class="photo-image">
+            <img src="./img_cayouche/Cayouche-1.jpg" alt="Image 1">
+            <img src="./img_cayouche/CAYOUCHE-2.jpg" alt="Image 2">
+            <img src="./img_cayouche/cayouche-4.jpg" alt="Image 3">
+        
+        </div>
+        <div id="fullscreen-container">
+            <img id="fullscreen-image">
         </div>
     </section>
 
@@ -155,7 +170,7 @@
     <footer class="wrapper">
         <div class="footer-img">
             <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-            <img src="./img/logo.png" class="logo-footer">
+            <img src="./img/logo-white.png" class="logo-footer">
             <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
         </div>
         <p class="footer-text">Copyright 2023 : Site réalisé par Sébastien GROSS et Benjamin HUNCKLER</p>
@@ -164,5 +179,6 @@
     <script src="./js/compteur.js"></script>
     <script src="./js/carrousel.js"></script>
     <script src="./js/dark-mode.js"></script>
+    <script src="./js/zoom-image.js"></script>
 </body>
 </html>

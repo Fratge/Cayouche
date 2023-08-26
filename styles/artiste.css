@@ -91,3 +91,102 @@ img[alt="Portrait Cayouche"]{
 .apercu-container > iframe{
     width: 100%;
 }
+
+img[alt="vague"]{
+    display: none;
+    width: 100vw;
+}
+
+.youtube{
+    height: 200px;
+    width: 100%;
+}
+
+@media screen and (min-width: 450px) {
+    img[alt="Portrait Cayouche"] {
+        height: 20vw;
+        width: auto;
+        border-radius: 500px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 3vmin;
+        text-align: center;
+    }
+
+    .description-container > div > p{
+        margin-top: 22px;
+        width: 300px;
+    }
+
+    .artiste-nom {
+        font-size: 45px;
+    }
+
+    .apercu-title{
+        font-size: 34px;
+    }
+
+    .artiste-nom::before {
+        height: 45px;
+    }
+
+    .apercu-title::before {
+        left: 56%;
+        bottom: -6px;
+        width: 200px;
+        height: 6px;
+    }
+
+    .youtube{
+        height: 250px;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    img[alt="Haut_Gauche"]{
+        display: none;
+    }
+    
+    img[alt="Bas_Droit"]{
+        display: none;
+    }
+
+    img[alt="vague"]{
+        display: inline;
+    }
+
+    .description-container > div > p{
+        margin-top: 22px;
+        width: 800px;
+    }
+
+    p {
+        font-size: 2.3vmin;
+        text-align: center;
+    }
+
+    .apercu-container > .video-container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .citation{
+        width: 120%;
+        font-size: 25px;
+    }
+
+    .youtube{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .youtube{
+        height: 350px;
+    }
+}
