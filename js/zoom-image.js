@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('img');
+    const sectionImages = document.querySelectorAll('.photo-container img'); // Remplace '.section-class' par la classe de ta section
     const fullscreenContainer = document.getElementById('fullscreen-container');
     const fullscreenImage = document.getElementById('fullscreen-image');
 
-    images.forEach(image => {
+    sectionImages.forEach(image => {
         image.addEventListener('click', () => {
             fullscreenImage.src = image.src;
             fullscreenContainer.style.display = 'flex';
