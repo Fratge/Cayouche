@@ -1,0 +1,88 @@
+
+/* TODO - save locally*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.darkmode {
+      --dark: #293145;
+      --textColor: #ffffff;
+}
+
+body {
+    background: var(--dark);
+}
+
+.DarkModeDiv {
+    position: fixed;
+    width: 3.5em;
+    height: 2em;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    z-index: 50;
+    right: 0;
+    top: 94%;
+}
+
+.darkModeTekst {
+    color: white;
+    font-size: 1em;
+}
+
+/*Toggle Button Styles*/
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+input[type=checkbox]:focus {
+    outline: 0;
+}
+
+.toggle {
+    height: 32px;
+    width: 52px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    border: 2px solid #474755;
+    background: var(--color-secondary);
+    transition: all 0.2s ease;
+}
+
+.toggleDugme {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -9px;
+    width: 18px;
+    height: 19px;
+    border-radius: 50%;
+    border: 1px solid var(--toggleDugmeBorderColor);
+    box-shadow: 0 1px 2px rgb(44 44 44 / 20%);
+    transform: translatex(20px);
+    background-color: white;
+}
+
+
+.toggleDugmePomijeriDesno {
+    transform: translatex(35px);
+}
+
+h1, h2{
+    color: var(--textColor)
+}
+
+.text-description, .text-contact, .footer-text{
+    color: var(--textColor);
+}
+
+.logo{
+    background-image: url('img/Bas-Droit.png');
+}

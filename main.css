@@ -4,6 +4,9 @@
 /* HEADER */
 @import "./styles/header.css";
 
+/* ASIDE */
+@import "./styles/aside.css";
+
 /* ARTISTE */
 @import "./styles/artiste.css";
 

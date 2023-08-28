@@ -1,32 +1,40 @@
 let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('.dark-mode-toggle');
-const logoFooter = document.querySelector('.logo-footer');
+const logos = document.querySelectorAll('.logo'); 
+const header = document.querySelector('header');
+const burger = document.querySelector('.burger-button');
+console.log(burger)
 
 const enableDarkMode = () => {
-
   document.body.classList.add('darkmode');
   localStorage.setItem('darkMode', 'enabled');
 }
 
 const disableDarkMode = () => {
-
   document.body.classList.remove('darkmode');
   localStorage.setItem('darkMode', null);
 }
 
 darkModeToggle.addEventListener('click', () => {
   darkMode = localStorage.getItem('darkMode');
-  logoFooter.src = './img/logo-white.png'; // Nouveau chemin d'image pour le mode sombre
-
+  
   if (darkMode !== 'enabled') {
     enableDarkMode();
-    logoFooter.src = './img/logo-dark.png'; // Revenir à l'image d'origine pour le mode clair
-
+    logos.forEach(logo => {
+      logo.src = './img/logo-dark.png';
+      header.style.backgroundColor = '#293145';
+      burger.src = './img/burger-white.svg'; 
+    });
   } else {
     disableDarkMode();
+    header.style.backgroundColor = 'white';
+    burger.src = './img/burger-dark.svg'; 
+
+    logos.forEach(logo => {
+      logo.src = './img/logo-white.png';
+    });
   }
 });
-
 
 const toggleDugmeId = document.getElementById("toggleDugmeId")
 
@@ -48,4 +56,4 @@ toggleDugmeId.addEventListener("click", () => {
   } else {
     disableDarkModeDugme();
   }
-})
+});

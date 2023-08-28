@@ -1,5 +1,9 @@
 .dates{
-    margin-top: 35px;
+    margin-top: 80px;
+}
+
+.dates-title{
+    margin-bottom: 45px;
 }
 
 .dates-title::before {
@@ -60,4 +64,39 @@
 .jours-infos2 :first-child{
     font-weight: bold;
     text-align: center;
+}
+
+.jours-infos1 > p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.jours-infos2 > p {
+    text-align: right;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 450px) {
+
+    .dates{
+        max-width: 1250px;
+    }
+    
+    .dates-title{
+        font-size: 34px;
+    }
+
+    .dates-title::before {
+        left: 52%;
+        bottom: -6px;
+        width: 400px;
+        height: 6px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .dates-title{
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
 }

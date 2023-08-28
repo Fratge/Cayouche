@@ -14,6 +14,26 @@ height: 100%;
 overflow: hidden;
 }
 
+.photo-title{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.photo-title::before{
+    content: "";
+    position: absolute;
+    left: 52%; 
+    bottom: -6px;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #96E072;
+}
+
 .slider {
 display: flex;
 transition: transform 0.3s ease-in-out;
@@ -49,14 +69,44 @@ color: var(--color-primary);
 }
 
 @media screen and (min-width: 500px) {
-.carrousel-container{
-    display: none;
-}
+    .carrousel-container{
+        display: none;
+    }
+
+    .billeterie{
+        margin-bottom: 100px;
+    }
+
+    .photo-title{
+        font-size: 34px;
+    }
+
+    .photo-title::before {
+        left: 52%;
+        bottom: -6px;
+        width: 100px;
+        height: 6px;
+    }
 }
 
 @media  screen and (max-width: 500px) {
     .photo-container{
         display: none;
+    }
+
+    .billeterie{
+        margin-bottom: 100px;
+    }
+
+    .photo-title{
+        font-size: 34px;
+    }
+
+    .photo-title::before {
+        left: 52%;
+        bottom: -6px;
+        width: 100px;
+        height: 6px;
     }
 }
 .photo-image > img {
@@ -84,9 +134,12 @@ color: var(--color-primary);
 }
 .photo-image{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .photo-image > img{
-    width: 32.5%;
+    width: 21%;
+    margin-bottom: 5vh;
 }

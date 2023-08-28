@@ -1,7 +1,102 @@
 header{
-    background-color: red;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid rgb(208, 208, 208);
+}
+
+.header-nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav > ul > li {
     list-style-type: none;
+    position: relative;
+    padding-bottom: 3px;
 }
+
+.header-nav > ul > li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background-color: #000;
+    transition: width .4s ease;
+}
+
+.header-nav > ul > li:hover::before {
+    width: 100%;
+}
+
+
+.logo-grand-ecran{
+    height: 105px;
+    width: 85px;
+}
+
+.header-nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.logo-petit-ecran, .burger-button{
+    display: none;
+}
+
+.image{
+    width: 35px;
+    height: 35px;
+}
+
+
+@media screen and (max-width: 750px) {
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    .header-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo-petit-ecran{
+        display: inline;
+        height: px;
+        width: 30px;
+    }
+
+    .logo-grand-ecran{
+        display: none;
+    }
+
+    .header-nav > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .burger-button{
+        display: inline;
+    }
+
+    .header-nav > ul > li {
+        display: none;
+    }
+
+    .none{
+        display: none;
+    }
+}
+

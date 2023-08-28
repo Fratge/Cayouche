@@ -11,21 +11,30 @@
 </head>
 <body>
     
-    <header class="wrapper">
+    <header>
+        <img class="image burger-button" src="./img/burger-dark.svg" alt="">
         <nav class="header-nav">
-            <ul>
-                <li>
-                    LOGO
-                </li>
+            <img src="./img/logo-white.png" alt="" class="logo logo-petit-ecran">
+            <ul class="wrapper">
+                <li><a href="#">Artiste</a></li>
+                <li><a href="#">Programmation</a></li>
+                <li><a href="#">Billeterie</a></li>
+                <li class="none"><img src="./img/logo-white.png" alt="logo" class="logo logo-grand-ecran"></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Commanditaire</a></li>
             </ul>  
         </nav>
+    </header>
+
+    <aside>
         <div class="dark-mode-container">
             <div class="DarkModeDiv">
                 <input type="checkbox" class="toggle DarkModeToggle  dugmeToggle" id="flexSwitchCheckDefault" checked>
                 <button class="toggleDugme dark-mode-toggle" id="toggleDugmeId"></button>
             </div>
         </div>
-    </header>
+    </aside>
 
     <section class="artiste">
         <div class="description-container wrapper">
@@ -33,7 +42,7 @@
             <div>
                 <h1 class="artiste-nom">CAYOUCHE</h1>   
                 <img src="./img/Cayouche_Portrait.jpg" alt="Portrait Cayouche">
-                <p>
+                <p class="text-description">
                     Cayouche a un style musical unique qui mélange la musique country traditionnelle avec des paroles humoristiques, souvent en utilisant le langage coloré et 
                     l'argot acadien. 
                 </p>
@@ -58,21 +67,22 @@
                 <p>26 août</p>
             </div>
             <div class="jours-infos1">
-                <p>Lorem ipsum dolor,</p>
-                <p>Lorem ipsum dolor,</p>
-                <p>Lorem ipsum dolor,</p>
+                <p>De 19h30 à 23h</p>
+                <p>Chason extraite de l'album « Un vieux hippy »</p>
+                <p>Chason extraite de l'album « Roule, Roule »</p>
             </div>
         </div>
 
         <div class="dimanche">
             <div class="jours-infos2">
-                <p>Lorem ipsum dolor,</p>
-                <p>Lorem ipsum dolor,</p>
-                <p>Lorem ipsum dolor,</p>
+                <p>De 18h30 à 22h</p>
+                <p>Chason extraite de l'album « Last Call »</p>
+                <p>Chason extraite de l'album « Le Rappel »</p>
+                <p>Surprise de Cayouche</p>
             </div>
             <div class="jours2">
-                <p>Samedi</p>
-                <p>26 août</p>
+                <p>Dimanche</p>
+                <p>27 août</p>
             </div>
         </div>
     </section>
@@ -108,13 +118,18 @@
     </section>
 
     <section class="wrapper carrousel-container">
-        <h2> Photos</h2>
+        <h2 class="photo-title"> Photos</h2>
         <div class="carrousel">
             <div class="container">
                 <div class="slider">
                   <div class="slide"><img src="./img_cayouche/Cayouche-1.jpg" alt="Image 1"></div>
                   <div class="slide"><img src="./img_cayouche/CAYOUCHE-2.jpg" alt="Image 2"></div>
-                  <div class="slide"><img src="./img_cayouche/cayouche-4.jpg" alt="Image 3"></div>
+                  <div class="slide"><img src="./img_cayouche/CAYOUCHE-3.jpg" alt="Image 3"></div>
+                  <div class="slide"><img src="./img_cayouche/cayouche-4.jpg" alt="Image 4"></div>
+                  <div class="slide"><img src="./img_cayouche/cayouche-5.jpg" alt="Image 5"></div>
+                  <div class="slide"><img src="./img_cayouche/cayouche-6.jpg" alt="Image 6"></div>
+                  <div class="slide"><img src="./img_cayouche/cayouche-7.jpg" alt="Image 7"></div>
+                  <div class="slide"><img src="./img_cayouche/cayouche-8.jpg" alt="Image 8"></div>
                 </div>
                 
             </div>
@@ -124,12 +139,16 @@
     </section>
 
     <section class="wrapper photo-container">
-        <h2>Photos </h2>
+        <h2 class="photo-title">Photos </h2>
         <div class="photo-image">
             <img src="./img_cayouche/Cayouche-1.jpg" alt="Image 1">
             <img src="./img_cayouche/CAYOUCHE-2.jpg" alt="Image 2">
-            <img src="./img_cayouche/cayouche-4.jpg" alt="Image 3">
-        
+            <img src="./img_cayouche/CAYOUCHE-3.jpg" alt="Image 3">
+            <img src="./img_cayouche/cayouche-4.jpg" alt="Image 4">
+            <img src="./img_cayouche/cayouche-5.jpg" alt="Image 5">
+            <img src="./img_cayouche/cayouche-6.jpg" alt="Image 6">
+            <img src="./img_cayouche/cayouche-7.jpg" alt="Image 7">
+            <img src="./img_cayouche/cayouche-8.jpg" alt="Image 8">
         </div>
         <div id="fullscreen-container">
             <img id="fullscreen-image">
@@ -137,7 +156,7 @@
     </section>
 
     <section class="contact-container wrapper">
-        <h2> Contact</h2>
+        <h2 class="contact-title"> Contact</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.9184339203853!2d-67.50000992310915!3d48.840694501951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c96c13fffb20c2b%3A0xa2ab048394234f5a!2sC%C3%A9gep%20de%20Matane!5e0!3m2!1sfr!2sca!4v1692801789928!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="text-contact">
             <P>616 Avenue St Rédempteur, Matane, QC G4W 1L1, Canada</P>
@@ -145,8 +164,8 @@
         </div>
     </section>
 
-    <section class="wrapper">
-        <h2>Merci à nos partenaires</h2>
+    <section class="wrapper partenaires">
+        <h2 class="partenaires-title">Merci à nos partenaires</h2>
         <div class="img-partenaire">
             <img src="./img/download.png" alt="partenaire familiprix">
             <img src="./img/images.jpg" alt="partenaire expression">
@@ -167,18 +186,21 @@
         </div>
     </section>
 
-    <footer class="wrapper">
-        <div class="footer-img">
-            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-            <img src="./img/logo-white.png" class="logo-footer">
-            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+    <footer class="footer-container">
+        <div class="wrapper">
+            <div class="footer-img">
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <img src="./img/logo-white.png" class="logo">
+                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p class="footer-text">Copyright 2023 : Site réalisé par Sébastien GROSS et Benjamin HUNCKLER</p>
         </div>
-        <p class="footer-text">Copyright 2023 : Site réalisé par Sébastien GROSS et Benjamin HUNCKLER</p>
     </footer>
 
     <script src="./js/compteur.js"></script>
     <script src="./js/carrousel.js"></script>
     <script src="./js/dark-mode.js"></script>
     <script src="./js/zoom-image.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>

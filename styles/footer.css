@@ -1,3 +1,7 @@
+.footer-container{
+    border-top: 2px solid rgb(208, 208, 208);
+}
+
 .footer-img{
     display: flex;
     justify-content: center;
@@ -29,7 +33,7 @@
     color: var(--color-secondary);
 }
 
-.logo-footer{
+.footer-img > .logo{
     width: 150px;
 }
 
