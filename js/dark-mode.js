@@ -3,7 +3,6 @@ const darkModeToggle = document.querySelector('.dark-mode-toggle');
 const logos = document.querySelectorAll('.logo'); 
 const header = document.querySelector('header');
 const burger = document.querySelector('.burger-button');
-console.log(burger)
 
 const enableDarkMode = () => {
   document.body.classList.add('darkmode');

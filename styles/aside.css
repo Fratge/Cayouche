@@ -79,10 +79,6 @@ h1, h2{
     color: var(--textColor)
 }
 
-.text-description, .text-contact, .footer-text{
+.text-description, .text-contact, .footer-text, .header-item{
     color: var(--textColor);
-}
-
-.logo{
-    background-image: url('img/Bas-Droit.png');
 }
